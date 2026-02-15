@@ -517,6 +517,15 @@ img {
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: opacity;
+}
+
+.is-open {
+  opacity: 1;
+  pointer-events: auto;
+  visibility: visible;
 }
 
 .modal {
@@ -738,12 +747,6 @@ textarea:active {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.is-open {
-  opacity: 1;
-  pointer-events: auto;
-  visibility: visible;
 }
 
 /* #endregion backdrop */
