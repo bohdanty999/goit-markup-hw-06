@@ -226,7 +226,7 @@ a:focus {
 @media screen and (min-width: 768px) {
   .header-container {
     gap: 0;
-    justify-content: space-between;
+
     align-items: center;
     position: relative;
   }
@@ -303,6 +303,10 @@ a:focus {
     padding-bottom: 24px;
   }
 
+  .header-container {
+    justify-content: normal;
+  }
+
   .address {
     font-weight: 400;
     font-size: 16px;
@@ -322,7 +326,7 @@ a:focus {
 /* #region hero */
 
 .hero-section {
-  padding: 75px 52px;
+  padding: 72px 52px;
   color: #ffffff;
   background-color: #2e2f42;
   background-image:
@@ -350,6 +354,7 @@ a:focus {
 .hero-title {
   color: #ffffff;
   margin-bottom: 72px;
+  max-width: 216px;
 }
 
 .hero-button {
@@ -368,7 +373,6 @@ a:focus {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: background-color;
-  margin-bottom: 72px;
 }
 
 .hero-button:hover,
@@ -378,7 +382,7 @@ a:focus {
 
 @media screen and (min-width: 768px) {
   .hero-section {
-    padding: 112px 136px;
+    padding: 112px 0;
     background-image:
       linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
       url(../images/hero-section/background-t.jpg);
@@ -396,21 +400,19 @@ a:focus {
       max-width: 768px;
     }
   }
+
   .hero-title {
     font-size: 56px;
     line-height: 1.07;
-    margin: 0 auto;
+
     max-width: 496px;
-    margin-bottom: 36px;
-  }
-  .hero-button {
-    margin-bottom: 112px;
+    margin: 0 auto 36px auto;
   }
 }
 
 @media screen and (min-width: 1158px) {
   .hero-section {
-    padding: 188px 472;
+    padding: 188px 0;
     background-image:
       linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
       url(../images/hero-section/background-d.jpg);
@@ -426,16 +428,11 @@ a:focus {
         ),
         url(../images/hero-section/background-d2x.jpg);
       max-width: 1440px;
-      margin-bottom: 40px;
     }
   }
 
   .hero-title {
     margin-bottom: 48px;
-  }
-
-  .hero-button {
-    margin-bottom: 188px;
   }
 }
 
@@ -535,6 +532,7 @@ a:focus {
   display: flex;
   flex-direction: column;
   row-gap: 72px;
+  align-items: center;
 }
 
 .team-element {
@@ -603,7 +601,7 @@ a:focus {
 .card-text {
   padding: 32px 16px;
 }
-@media screen and(max-width:768) {
+@media screen and (max-width: 1157px) {
   .portfolio-item {
     border-right: 1px solid #e7e9fc;
     border-bottom: 1px solid #e7e9fc;
