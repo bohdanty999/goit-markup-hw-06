@@ -254,10 +254,6 @@ a:focus {
     letter-spacing: 0.04em;
     color: #434455;
   }
-  .address-list a {
-    padding-top: 16px;
-    padding-bottom: 16px;
-  }
 
   .nav-list a {
     display: block;
@@ -299,9 +295,9 @@ a:focus {
   .nav {
     margin-right: 332px;
   }
-  .nav-list a {
-    padding-top: 16px;
-    padding-bottom: 16px;
+  .header-container a {
+    padding-top: 24px;
+    padding-bottom: 24px;
   }
 
   .address {
@@ -309,6 +305,7 @@ a:focus {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    font-style: normal;
   }
 
   .address-list {
@@ -322,6 +319,7 @@ a:focus {
 /* #region hero */
 
 .hero-section {
+  padding-top: 75px;
   color: #ffffff;
   background-color: #2e2f42;
   background-image:
@@ -348,7 +346,7 @@ a:focus {
 
 .hero-title {
   color: #ffffff;
-  padding: 72px 52px 0 52px;
+  margin-bottom: 72px;
 }
 
 .hero-button {
@@ -377,6 +375,7 @@ a:focus {
 
 @media screen and (min-width: 768px) {
   .hero-section {
+    padding-top: 112px;
     background-image:
       linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
       url(../images/hero-section/background-t.jpg);
@@ -399,16 +398,16 @@ a:focus {
     line-height: 1.07;
     margin: 0 auto;
     max-width: 496px;
-    padding: 112px 0 0 0;
+    margin-bottom: 36px;
   }
   .hero-button {
-    margin-top: 36px;
     margin-bottom: 112px;
   }
 }
 
 @media screen and (min-width: 1158px) {
   .hero-section {
+    padding-top: 188px;
     background-image:
       linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
       url(../images/hero-section/background-d.jpg);
@@ -424,15 +423,11 @@ a:focus {
         ),
         url(../images/hero-section/background-d2x.jpg);
       max-width: 1440px;
+      margin-bottom: 40px;
     }
   }
 
-  .hero-title {
-    padding-top: 188px;
-  }
-
   .hero-button {
-    margin-top: 40px;
     margin-bottom: 188px;
   }
 }
@@ -517,7 +512,7 @@ a:focus {
   }
 
   .features-item {
-    flex-basis: calc((100% - (24px * 3) / 4));
+    flex-basis: calc((100% - (24px * 3)) / 4);
   }
 }
 
@@ -645,7 +640,7 @@ a:focus {
     row-gap: 72px;
   }
 
-  .porfolio-item {
+  .portfolio-item {
     flex-basis: calc((100% - 24px) / 2);
   }
 }
@@ -656,7 +651,7 @@ a:focus {
     row-gap: 40px;
   }
 
-  .portfolio-element {
+  .portfolio-item {
     flex-basis: calc((100% - 48px) / 3);
   }
 }
