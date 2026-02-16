@@ -792,9 +792,6 @@ a:focus {
 }
 
 @media screen and (min-width: 756px) {
-  .footer {
-  }
-
   .footer-container {
     row-gap: 72px;
     column-gap: 24px;
@@ -949,6 +946,15 @@ a:focus {
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: opacity;
+}
+
+.is-open {
+  opacity: 1;
+  pointer-events: auto;
+  visibility: visible;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: opacity;
