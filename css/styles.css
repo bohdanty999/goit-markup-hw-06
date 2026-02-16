@@ -1,4 +1,12 @@
 /* #region common */
+* {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
 
 body {
   color: #434455;
@@ -7,7 +15,6 @@ body {
   letter-spacing: 0.02em;
   font-size: 16px;
   line-height: 1.5;
-  overflow: visible;
 }
 
 a {
@@ -237,10 +244,6 @@ a:focus {
     color: #2e2f42;
   }
 
-  .header-container a {
-    padding: 0;
-  }
-
   .address-list {
     display: flex;
     flex-direction: column;
@@ -258,8 +261,8 @@ a:focus {
   .nav-list a {
     display: block;
     position: relative;
-    padding-top: 16px;
-    padding-bottom: 16px;
+    padding-top: 24px;
+    padding-bottom: 24px;
   }
 
   .nav-list a::after {
@@ -427,6 +430,10 @@ a:focus {
     }
   }
 
+  .hero-title {
+    margin-bottom: 48px;
+  }
+
   .hero-button {
     margin-bottom: 188px;
   }
@@ -560,11 +567,18 @@ a:focus {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 24px;
+    column-gap: 24px;
+    row-gap: 64px;
   }
 
   .team-element {
     flex-basis: calc((100% - 24px) / 2);
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .team-element {
+    flex-basis: calc((100% - (24px * 3)) / 4);
   }
 }
 
@@ -588,6 +602,9 @@ a:focus {
 
 .card-text {
   padding: 32px 16px;
+}
+
+.portfolio-item {
   border-right: 1px solid #e7e9fc;
   border-bottom: 1px solid #e7e9fc;
   border-left: 1px solid #e7e9fc;
@@ -786,7 +803,7 @@ a:focus {
   background-color: #31d0aa;
 }
 
-@media screen and (min-width: 756px) {
+@media screen and (min-width: 768px) {
   .footer-container {
     row-gap: 72px;
     column-gap: 24px;
@@ -822,7 +839,9 @@ a:focus {
   .footer {
     padding: 100px 0;
   }
-
+  .footer form {
+    margin-left: auto;
+  }
   .footer-container {
     padding: 0;
     flex-wrap: nowrap;
@@ -1178,10 +1197,16 @@ textarea:active {
   justify-content: center;
 }
 
-@media screen and (min-width: 756px) {
+@media screen and (min-width: 768px) {
   .modal {
-    padding: 24px 24px;
+    padding: 72px 24px;
     width: 408px;
+    position: relative;
+  }
+  .btn-close {
+    position: absolute;
+    top: 24px;
+    right: 24px;
   }
 }
 
