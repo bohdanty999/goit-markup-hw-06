@@ -322,7 +322,7 @@ a:focus {
 /* #region hero */
 
 .hero-section {
-  padding-top: 75px;
+  padding: 75px 52px;
   color: #ffffff;
   background-color: #2e2f42;
   background-image:
@@ -378,7 +378,7 @@ a:focus {
 
 @media screen and (min-width: 768px) {
   .hero-section {
-    padding-top: 112px;
+    padding: 112px 136px;
     background-image:
       linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
       url(../images/hero-section/background-t.jpg);
@@ -410,7 +410,7 @@ a:focus {
 
 @media screen and (min-width: 1158px) {
   .hero-section {
-    padding-top: 188px;
+    padding: 188px 472;
     background-image:
       linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
       url(../images/hero-section/background-d.jpg);
@@ -603,16 +603,17 @@ a:focus {
 .card-text {
   padding: 32px 16px;
 }
+@media screen and(max-width:768) {
+  .portfolio-item {
+    border-right: 1px solid #e7e9fc;
+    border-bottom: 1px solid #e7e9fc;
+    border-left: 1px solid #e7e9fc;
 
-.portfolio-item {
-  border-right: 1px solid #e7e9fc;
-  border-bottom: 1px solid #e7e9fc;
-  border-left: 1px solid #e7e9fc;
-
-  box-shadow:
-    0px 2px 1px 0px rgba(46, 47, 66, 0.08),
-    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
-    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+    box-shadow:
+      0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+      0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+      0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+  }
 }
 
 .overlay {
@@ -670,6 +671,12 @@ a:focus {
 
   .portfolio-item {
     flex-basis: calc((100% - 48px) / 3);
+  }
+
+  .card-text {
+    border-right: 1px solid #e7e9fc;
+    border-bottom: 1px solid #e7e9fc;
+    border-left: 1px solid #e7e9fc;
   }
 }
 
